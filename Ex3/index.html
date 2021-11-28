@@ -1,0 +1,107 @@
+<!--Brand-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="scheduleBINFB.js"></script>
+</head>
+<body>
+<div class="header">
+    <h1>Timetable</h1>
+</div>
+
+<!--We can also do it by header this part so it not may have duplicates-->
+
+<div class="filters">
+    <form action="" method="get">
+        <label for="year">Year</label>
+        <select id="year" name="year">
+            <option value="undergraduates">Undergraduates</option>
+        </select>
+
+        <label for="dept">Year</label>
+        <select id="dept" name="dept">
+            <option href="index.html" value="binf3A">BINF ||| A</option>
+            <option href="index2.html" value="binf3B">BINF ||| B</option>
+        </select>
+    </form>
+</div>
+<br>
+
+<h1><span id="name"></span></h1>
+<script>
+    let name = "BINF ||| A TimeTable";
+    document.getElementById("name").innerHTML = name;
+</script>
+
+
+<div class="content">
+    <table id="program1" border="1">
+        <tr>
+            <th>Time</th>
+            <th>08:45-09:30</th>
+            <th>09:45-10:30</th>
+            <th>10:45-11:30</th>
+            <th>11:45-12:30</th>
+            <th>12:45-13:30</th>
+            <th>13:45-14:30</th>
+        </tr>
+        <tr>
+            <th>Monday</th>
+            <td></td>
+            <td colspan="2" bgcolor="#add8e6" align="center"><span id="monday"></span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <script>
+                document.getElementById('monday').innerHTML = " BUS 351 Consumer Behavior";
+            </script>
+        </tr>
+
+        <tr>
+            <th>Tuesday</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3" bgcolor="#add8e6" align="center"><span id="tuesday"></span></td>
+            <script>
+                document.getElementById('tuesday').innerHTML = "BUS Cost Accounting";
+            </script>
+        </tr>
+
+        <tr>
+            <th>Wednesday</th>
+            <td colspan="3" bgcolor="#add8e6" align="center"><span id="wednesday"></span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <script>
+                document.getElementById('wednesday').innerHTML = "ECO 311 Econometrics |";
+            </script>
+        </tr>
+
+        <tr>
+            <th>Thursday</th>
+            <td></td>
+            <td colspan="3" bgcolor="#add8e6" align="center"><span id="thursday"></span></td>
+            <td></td>
+            <td></td>
+            <script>
+                document.getElementById('thursday').innerHTML = "CEN 361 Computer Networks";
+            </script>
+        </tr>
+        <tr>
+            <th>Friday</th>
+            <td></td>
+            <td></td>
+            <td colspan="3" bgcolor="#add8e6" align="center"><span id="friday"></span></td>
+            <td></td>
+            <script>
+                document.getElementById('friday').innerHTML = "BUS 321 Operations Management";
+            </script>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
